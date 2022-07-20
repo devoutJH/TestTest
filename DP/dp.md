@@ -12,9 +12,10 @@
 ## 해결 방법
 
 ## 핵심 코드
+```c
 int a, b; scanf("%d %d", &a, &b);  
 printf("Hello World");  
-
+```
 # 2. 계단 오르기
 
 [백준 2579번](https://www.acmicpc.net/problem/2579)
