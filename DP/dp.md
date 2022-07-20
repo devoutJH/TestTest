@@ -12,7 +12,8 @@
 ## 해결 방법
 
 ## 핵심 코드
-
+int a, b; scanf("%d %d", &a, &b);
+printf("Hello World");
 
 # 2. 계단 오르기
 
