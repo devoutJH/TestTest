@@ -9,7 +9,7 @@
 
 #### 코드 설명  
 
-```
+``` c
 #include <cstdio>
     
 int n = 10;
