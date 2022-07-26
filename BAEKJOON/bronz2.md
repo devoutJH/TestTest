@@ -9,6 +9,15 @@
 
 #### 코드 설명  
 
+* 반복문을 이용하여 a, b의 점수를 각 배열 a, b에 저장  
+``` c
+    int i;
+    for(i = 1; i <= n; ++i)
+        scanf("%d", &a[i]);         
+    for(i = 1; i <= n; ++i)
+```
+
+
 ``` c
 #include <cstdio>
     
