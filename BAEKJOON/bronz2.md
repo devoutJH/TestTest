@@ -17,7 +17,24 @@
     for(i = 1; i <= n; ++i)
 ```
 
+* 각 배열에서 같은 라운드에 해당되는 인덱스 번호를 이용하여 값을 들고와 비교하고 a, b가 이긴 횟수를 저장할 변수를 증가  
+``` c
+    int awin, bwin;
+    awin = bwin = 0;
+    for(i = 1; i <= n; ++i){
+        if (a[i] > b[i]) ++awin;
+        else if (a[i] < b[i]) ++bwin;
+    }
+```
 
+* 위 반복을 이용하여 결과를 추출하고 해당 내용에서 더 많이 승리한 사람을 출력  
+``` c
+    if (awin > bwin) printf("A\n");
+    else if (awin < bwin) printf("B\n");
+    else printf("D\n");
+```
+
+* 전체 코드  
 ``` c
 #include <cstdio>
     
@@ -31,12 +48,11 @@ int main(void){
     for(i = 1; i <= n; ++i)
         scanf("%d", &b[i]);
         
-    int awin, bwin, draw;
-    awin = bwin = draw = 0;
+    int awin, bwin;
+    awin = bwin = 0;
     for(i = 1; i <= n; ++i){
         if (a[i] > b[i]) ++awin;
         else if (a[i] < b[i]) ++bwin;
-        else ++draw;
     }
         
     if (awin > bwin) printf("A\n");
