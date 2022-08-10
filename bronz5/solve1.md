@@ -1,5 +1,5 @@
 [백준 - 문제 2754](https://www.acmicpc.net/problem/2754)  
-```
+```c
 #include <iostream>
 
 int main(void){
